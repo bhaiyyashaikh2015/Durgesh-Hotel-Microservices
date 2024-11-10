@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "123f1dc1-375c-4a01-ab61-731729c2eec4",
+		"name": "Hotel-Microservices-Durgesh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16376391"
+	},
+	"item": [
+		{
+			"name": "RatingService",
+			"item": [
+				{
+					"name": "get all ratings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJzZlVnRDhUQkp3U0p3cUgtRGNEMkl3akQzR3NsVEFyT3ZURGJoRjNFVkJJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmI3Nk9PRzdoaUVuc21ZWXNDUWhacjB1ck5VSVlaOVI1ZU5YamJWZnhUZWMub2FyMm1qamMzb0ppMXRrUlc1ZDciLCJpc3MiOiJodHRwczovL2Rldi0xNDA2OTQzNS5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE3MzEyMjg5MzYsImV4cCI6MTczMTIzMjUzNiwiY2lkIjoiMG9ha3Z0a2JnMktEMmd5c2c1ZDciLCJ1aWQiOiIwMHVrdnRvdGhyVUVYeExNSjVkNyIsInNjcCI6WyJwcm9maWxlIiwib2ZmbGluZV9hY2Nlc3MiLCJvcGVuaWQiLCJlbWFpbCJdLCJhdXRoX3RpbWUiOjE3MzEyMjI5MDgsInN1YiI6ImJoYWl5eWFzaGFpa2gyMDIwQGdtYWlsLmNvbSIsIm15Y2xhaW0iOlsiRXZlcnlvbmUiLCJBZG1pbiIsIk5vcm1hbCJdfQ.SPTLLJSi9LadKU9ljN1CGPr6E0etONjHxxEi9Y3rLSlGE3dwD1BgBzgnPe1LLKRigu_fEkdpaA3xRVAwTahjM9-_44IidYDAvmFwOTMaBd6WrAmMnyvLD2AWwA4sNfWw4QVYC9PmFi7ARv1swO5_89v5omF6rEp_kHjgmnU0Va9PZ0YUCmeFHnAyYHfJVrGFaIDHPJVd53rtJwtwIhK1fVCT_x42zmFYyqq7zYoeBNrxdJ0KPe8-2B15qC3hAMs9e8XDuJ30v0xic-uRQix9LRyvvOw3-r9tc33zakmAGzn8CwlJZaDTyYbOym9uXRb_ti9ANLKSbKz8zvEsEJ3whA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/ratings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a rating",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJzZlVnRDhUQkp3U0p3cUgtRGNEMkl3akQzR3NsVEFyT3ZURGJoRjNFVkJJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmI3Nk9PRzdoaUVuc21ZWXNDUWhacjB1ck5VSVlaOVI1ZU5YamJWZnhUZWMub2FyMm1qamMzb0ppMXRrUlc1ZDciLCJpc3MiOiJodHRwczovL2Rldi0xNDA2OTQzNS5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE3MzEyMjg5MzYsImV4cCI6MTczMTIzMjUzNiwiY2lkIjoiMG9ha3Z0a2JnMktEMmd5c2c1ZDciLCJ1aWQiOiIwMHVrdnRvdGhyVUVYeExNSjVkNyIsInNjcCI6WyJwcm9maWxlIiwib2ZmbGluZV9hY2Nlc3MiLCJvcGVuaWQiLCJlbWFpbCJdLCJhdXRoX3RpbWUiOjE3MzEyMjI5MDgsInN1YiI6ImJoYWl5eWFzaGFpa2gyMDIwQGdtYWlsLmNvbSIsIm15Y2xhaW0iOlsiRXZlcnlvbmUiLCJBZG1pbiIsIk5vcm1hbCJdfQ.SPTLLJSi9LadKU9ljN1CGPr6E0etONjHxxEi9Y3rLSlGE3dwD1BgBzgnPe1LLKRigu_fEkdpaA3xRVAwTahjM9-_44IidYDAvmFwOTMaBd6WrAmMnyvLD2AWwA4sNfWw4QVYC9PmFi7ARv1swO5_89v5omF6rEp_kHjgmnU0Va9PZ0YUCmeFHnAyYHfJVrGFaIDHPJVd53rtJwtwIhK1fVCT_x42zmFYyqq7zYoeBNrxdJ0KPe8-2B15qC3hAMs9e8XDuJ30v0xic-uRQix9LRyvvOw3-r9tc33zakmAGzn8CwlJZaDTyYbOym9uXRb_ti9ANLKSbKz8zvEsEJ3whA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"8d706652-459e-481b-aa60-7a4c9704b60a\",\r\n    \"hotelId\": \"38c018e6-0c8e-4312-ab02-fbff6c6a82af\",\r\n    \"rating\": 8,\r\n    \"feedback\": \"Good food\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/ratings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UserService",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJzZlVnRDhUQkp3U0p3cUgtRGNEMkl3akQzR3NsVEFyT3ZURGJoRjNFVkJJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmI3Nk9PRzdoaUVuc21ZWXNDUWhacjB1ck5VSVlaOVI1ZU5YamJWZnhUZWMub2FyMm1qamMzb0ppMXRrUlc1ZDciLCJpc3MiOiJodHRwczovL2Rldi0xNDA2OTQzNS5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE3MzEyMjg5MzYsImV4cCI6MTczMTIzMjUzNiwiY2lkIjoiMG9ha3Z0a2JnMktEMmd5c2c1ZDciLCJ1aWQiOiIwMHVrdnRvdGhyVUVYeExNSjVkNyIsInNjcCI6WyJwcm9maWxlIiwib2ZmbGluZV9hY2Nlc3MiLCJvcGVuaWQiLCJlbWFpbCJdLCJhdXRoX3RpbWUiOjE3MzEyMjI5MDgsInN1YiI6ImJoYWl5eWFzaGFpa2gyMDIwQGdtYWlsLmNvbSIsIm15Y2xhaW0iOlsiRXZlcnlvbmUiLCJBZG1pbiIsIk5vcm1hbCJdfQ.SPTLLJSi9LadKU9ljN1CGPr6E0etONjHxxEi9Y3rLSlGE3dwD1BgBzgnPe1LLKRigu_fEkdpaA3xRVAwTahjM9-_44IidYDAvmFwOTMaBd6WrAmMnyvLD2AWwA4sNfWw4QVYC9PmFi7ARv1swO5_89v5omF6rEp_kHjgmnU0Va9PZ0YUCmeFHnAyYHfJVrGFaIDHPJVd53rtJwtwIhK1fVCT_x42zmFYyqq7zYoeBNrxdJ0KPe8-2B15qC3hAMs9e8XDuJ30v0xic-uRQix9LRyvvOw3-r9tc33zakmAGzn8CwlJZaDTyYbOym9uXRb_ti9ANLKSbKz8zvEsEJ3whA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create a user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJzZlVnRDhUQkp3U0p3cUgtRGNEMkl3akQzR3NsVEFyT3ZURGJoRjNFVkJJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnBHcll5NEpBMllvU3c4SHo0Y2pDSElWRV9Gcm1zWlltVnVsSW4wYkNoVE0ub2FyMm1qZnd1eE1xNVZRdVU1ZDciLCJpc3MiOiJodHRwczovL2Rldi0xNDA2OTQzNS5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE3MzEyMjI5MTAsImV4cCI6MTczMTIyNjUxMCwiY2lkIjoiMG9ha3Z0a2JnMktEMmd5c2c1ZDciLCJ1aWQiOiIwMHVrdnRvdGhyVUVYeExNSjVkNyIsInNjcCI6WyJvZmZsaW5lX2FjY2VzcyIsImVtYWlsIiwicHJvZmlsZSIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE3MzEyMjI5MDgsInN1YiI6ImJoYWl5eWFzaGFpa2gyMDIwQGdtYWlsLmNvbSIsIm15Y2xhaW0iOlsiRXZlcnlvbmUiLCJBZG1pbiIsIk5vcm1hbCJdfQ.MJ1wzrqomzC1Dr6rSARTO7qHA5iy3h89jg_D98JVx7UBZ9t-XozgaOJkm6aq06vUhMph8LaiKNsea7MpDFbuLRWKZGqaCBBuZSLZ8cWbDK6JI9fHpudvbV-oQ5xAR3B10UTj6hiV7Xza5EQ_h2xzWmzE8jY0D_ewDzYFSA0JiZHLUn9-n9mDu7CnpB3DvdEYiHbCe0rXfHFWp_Ss-udfiJcQHy72_KEnE6vCJkXaGNIIZaek6Bgwri7T0TQp43Qph0NQW6zzSCpr6nae1LJrFemP5FWOg0kbCw7Ma1fW8WzDJxaWzWlUl4NnXSMJv1JyhbaWuTuWevNfGjoLTd3_yA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Samir\",\r\n    \"email\": \"samir@gmail.com\",\r\n    \"about\": \"Software engineer at IBM\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJzZlVnRDhUQkp3U0p3cUgtRGNEMkl3akQzR3NsVEFyT3ZURGJoRjNFVkJJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmI3Nk9PRzdoaUVuc21ZWXNDUWhacjB1ck5VSVlaOVI1ZU5YamJWZnhUZWMub2FyMm1qamMzb0ppMXRrUlc1ZDciLCJpc3MiOiJodHRwczovL2Rldi0xNDA2OTQzNS5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE3MzEyMjg5MzYsImV4cCI6MTczMTIzMjUzNiwiY2lkIjoiMG9ha3Z0a2JnMktEMmd5c2c1ZDciLCJ1aWQiOiIwMHVrdnRvdGhyVUVYeExNSjVkNyIsInNjcCI6WyJwcm9maWxlIiwib2ZmbGluZV9hY2Nlc3MiLCJvcGVuaWQiLCJlbWFpbCJdLCJhdXRoX3RpbWUiOjE3MzEyMjI5MDgsInN1YiI6ImJoYWl5eWFzaGFpa2gyMDIwQGdtYWlsLmNvbSIsIm15Y2xhaW0iOlsiRXZlcnlvbmUiLCJBZG1pbiIsIk5vcm1hbCJdfQ.SPTLLJSi9LadKU9ljN1CGPr6E0etONjHxxEi9Y3rLSlGE3dwD1BgBzgnPe1LLKRigu_fEkdpaA3xRVAwTahjM9-_44IidYDAvmFwOTMaBd6WrAmMnyvLD2AWwA4sNfWw4QVYC9PmFi7ARv1swO5_89v5omF6rEp_kHjgmnU0Va9PZ0YUCmeFHnAyYHfJVrGFaIDHPJVd53rtJwtwIhK1fVCT_x42zmFYyqq7zYoeBNrxdJ0KPe8-2B15qC3hAMs9e8XDuJ30v0xic-uRQix9LRyvvOw3-r9tc33zakmAGzn8CwlJZaDTyYbOym9uXRb_ti9ANLKSbKz8zvEsEJ3whA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/users/39d42a8a-f4fb-43d1-bef0-6bd043175a61",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"users",
+								"39d42a8a-f4fb-43d1-bef0-6bd043175a61"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HotelService",
+			"item": [
+				{
+					"name": "get hotel by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJzZlVnRDhUQkp3U0p3cUgtRGNEMkl3akQzR3NsVEFyT3ZURGJoRjNFVkJJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnBHcll5NEpBMllvU3c4SHo0Y2pDSElWRV9Gcm1zWlltVnVsSW4wYkNoVE0ub2FyMm1qZnd1eE1xNVZRdVU1ZDciLCJpc3MiOiJodHRwczovL2Rldi0xNDA2OTQzNS5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE3MzEyMjI5MTAsImV4cCI6MTczMTIyNjUxMCwiY2lkIjoiMG9ha3Z0a2JnMktEMmd5c2c1ZDciLCJ1aWQiOiIwMHVrdnRvdGhyVUVYeExNSjVkNyIsInNjcCI6WyJvZmZsaW5lX2FjY2VzcyIsImVtYWlsIiwicHJvZmlsZSIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE3MzEyMjI5MDgsInN1YiI6ImJoYWl5eWFzaGFpa2gyMDIwQGdtYWlsLmNvbSIsIm15Y2xhaW0iOlsiRXZlcnlvbmUiLCJBZG1pbiIsIk5vcm1hbCJdfQ.MJ1wzrqomzC1Dr6rSARTO7qHA5iy3h89jg_D98JVx7UBZ9t-XozgaOJkm6aq06vUhMph8LaiKNsea7MpDFbuLRWKZGqaCBBuZSLZ8cWbDK6JI9fHpudvbV-oQ5xAR3B10UTj6hiV7Xza5EQ_h2xzWmzE8jY0D_ewDzYFSA0JiZHLUn9-n9mDu7CnpB3DvdEYiHbCe0rXfHFWp_Ss-udfiJcQHy72_KEnE6vCJkXaGNIIZaek6Bgwri7T0TQp43Qph0NQW6zzSCpr6nae1LJrFemP5FWOg0kbCw7Ma1fW8WzDJxaWzWlUl4NnXSMJv1JyhbaWuTuWevNfGjoLTd3_yA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/hotels/38c018e6-0c8e-4312-ab02-fbff6c6a82af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"hotels",
+								"38c018e6-0c8e-4312-ab02-fbff6c6a82af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create a hotel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJzZlVnRDhUQkp3U0p3cUgtRGNEMkl3akQzR3NsVEFyT3ZURGJoRjNFVkJJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnBHcll5NEpBMllvU3c4SHo0Y2pDSElWRV9Gcm1zWlltVnVsSW4wYkNoVE0ub2FyMm1qZnd1eE1xNVZRdVU1ZDciLCJpc3MiOiJodHRwczovL2Rldi0xNDA2OTQzNS5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE3MzEyMjI5MTAsImV4cCI6MTczMTIyNjUxMCwiY2lkIjoiMG9ha3Z0a2JnMktEMmd5c2c1ZDciLCJ1aWQiOiIwMHVrdnRvdGhyVUVYeExNSjVkNyIsInNjcCI6WyJvZmZsaW5lX2FjY2VzcyIsImVtYWlsIiwicHJvZmlsZSIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE3MzEyMjI5MDgsInN1YiI6ImJoYWl5eWFzaGFpa2gyMDIwQGdtYWlsLmNvbSIsIm15Y2xhaW0iOlsiRXZlcnlvbmUiLCJBZG1pbiIsIk5vcm1hbCJdfQ.MJ1wzrqomzC1Dr6rSARTO7qHA5iy3h89jg_D98JVx7UBZ9t-XozgaOJkm6aq06vUhMph8LaiKNsea7MpDFbuLRWKZGqaCBBuZSLZ8cWbDK6JI9fHpudvbV-oQ5xAR3B10UTj6hiV7Xza5EQ_h2xzWmzE8jY0D_ewDzYFSA0JiZHLUn9-n9mDu7CnpB3DvdEYiHbCe0rXfHFWp_Ss-udfiJcQHy72_KEnE6vCJkXaGNIIZaek6Bgwri7T0TQp43Qph0NQW6zzSCpr6nae1LJrFemP5FWOg0kbCw7Ma1fW8WzDJxaWzWlUl4NnXSMJv1JyhbaWuTuWevNfGjoLTd3_yA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Shelke Mama\",\r\n    \"location\": \"Aurangabad\",\r\n    \"about\": \"Good for food with nature env\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/hotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all hotels",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJzZlVnRDhUQkp3U0p3cUgtRGNEMkl3akQzR3NsVEFyT3ZURGJoRjNFVkJJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmI3Nk9PRzdoaUVuc21ZWXNDUWhacjB1ck5VSVlaOVI1ZU5YamJWZnhUZWMub2FyMm1qamMzb0ppMXRrUlc1ZDciLCJpc3MiOiJodHRwczovL2Rldi0xNDA2OTQzNS5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE3MzEyMjg5MzYsImV4cCI6MTczMTIzMjUzNiwiY2lkIjoiMG9ha3Z0a2JnMktEMmd5c2c1ZDciLCJ1aWQiOiIwMHVrdnRvdGhyVUVYeExNSjVkNyIsInNjcCI6WyJwcm9maWxlIiwib2ZmbGluZV9hY2Nlc3MiLCJvcGVuaWQiLCJlbWFpbCJdLCJhdXRoX3RpbWUiOjE3MzEyMjI5MDgsInN1YiI6ImJoYWl5eWFzaGFpa2gyMDIwQGdtYWlsLmNvbSIsIm15Y2xhaW0iOlsiRXZlcnlvbmUiLCJBZG1pbiIsIk5vcm1hbCJdfQ.SPTLLJSi9LadKU9ljN1CGPr6E0etONjHxxEi9Y3rLSlGE3dwD1BgBzgnPe1LLKRigu_fEkdpaA3xRVAwTahjM9-_44IidYDAvmFwOTMaBd6WrAmMnyvLD2AWwA4sNfWw4QVYC9PmFi7ARv1swO5_89v5omF6rEp_kHjgmnU0Va9PZ0YUCmeFHnAyYHfJVrGFaIDHPJVd53rtJwtwIhK1fVCT_x42zmFYyqq7zYoeBNrxdJ0KPe8-2B15qC3hAMs9e8XDuJ30v0xic-uRQix9LRyvvOw3-r9tc33zakmAGzn8CwlJZaDTyYbOym9uXRb_ti9ANLKSbKz8zvEsEJ3whA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/hotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ApiGateway",
+			"item": [
+				{
+					"name": "get JWT token from okta login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
